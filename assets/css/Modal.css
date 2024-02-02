@@ -1,0 +1,57 @@
+/*modal*/
+.modal, body{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.modal .container{
+	position: relative;
+	min-width: 160px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 12px #ccc;
+}
+
+.modal[hide]{
+	display: none;
+}
+.backdrop{
+    /*background: #0000001f;*/
+	background: #173d36db;
+}
+.loading{
+	z-index: 999;
+}
+.popup, .tooltip{
+    bottom: unset;
+    right: unset;
+    top: 8px;
+    left: 50%;
+}
+.tooltip{
+	z-index: 998;
+    transform: translateX(-50%);
+}
+.popup{
+	z-index: 997;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-close{
+	position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 2em;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.container .btn-close{
+	color: #656565;
+}
