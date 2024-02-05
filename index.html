@@ -10,7 +10,13 @@
 	<meta property="og:image" content="assets/imgs/thumbnail.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/Modal.css">
-	<meta name="google-adsense-account" content="ca-pub-5978541824398312">
+	<style type="text/css">
+		.ads-banner1{
+			border: 1px solid;
+		    padding: 4px 8px 0px;
+		    background: #e1e1e1;
+		}
+	</style>
 </head>
 <body>
 
@@ -18,10 +24,11 @@
 		<span class="loader"></span>
 	</div>
 
+
 	<header class="text">
 		<div>➽<label id="level">1</label></div>
 		<div>⏰<label id="time">0:30</label></div>
-		<div>☃<label id="score">0</label></div>
+		<div>☃<label id="score" for="mod-panel">0</label></div>
 	</header>
 
     <div id="game-options" class="center">
@@ -33,19 +40,7 @@
 			</div>
 		</div>
 		<label id="play" class="o-item">Play</label>
-	    	<div id="Adscode" class="ads" style="width: 100%">
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5978541824398312"
-     crossorigin="anonymous"></script>
-			<ins class="adsbygoogle"
-			     style="display:block"
-			     data-ad-format="fluid"
-			     data-ad-layout-key="-fb+5w+4e-db+86"
-			     data-ad-client="ca-pub-5978541824398312"
-			     data-ad-slot="4538515156"></ins>
-			<script>
-			     (adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-		</div>
+		<div class="ads-banner1"></div>
 		<label id="options" class="o-item">
 			<div class="flex o-options">
 				<label id="o-sound"><div>Sound</div><div>♫</div></label>
@@ -65,4 +60,5 @@
 </body>
 	<script type="text/javascript" src="./assets/js/konva.min.js"></script>
 	<script type="text/javascript" src="./assets/js/app.min.js"></script>
+	
 </html>
